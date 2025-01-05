@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-05T22:17:37.557086" rpa="false" schemaversion="5">
+<suite id="s1" name="T 1 Zobrazenie banerov" source="C:\Users\veron\PycharmProjects\FreshFriUniza_Semestralka\tests\T_1_Zobrazenie_banerov.robot">
+<test id="s1-t1" name="Verify Banners" line="94">
+<kw name="Open Browser Fricka" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:37.964279" level="INFO">Opening browser 'Chrome' to base url 'https://fresh.fri.uniza.sk'.</msg>
+<arg>${BASE URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-05T22:17:37.963949" elapsed="2.949567"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-05T22:17:40.914019" elapsed="0.044066"/>
+</kw>
+<status status="PASS" start="2025-01-05T22:17:37.963059" elapsed="2.995215"/>
+</kw>
+<kw name="Banner Clickable Links">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRST_BANNER}</arg>
+<arg>timeout=45s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-05T22:17:40.959026" elapsed="1.682244"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${FIRST_BANNER}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-05T22:17:42.641566" elapsed="0.051937"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:42.694069" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/div/div/div[2]/div/a/img'.</msg>
+<arg>${FIRST_BANNER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:42.693753" elapsed="1.277892"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-01-05T22:17:43.971951" elapsed="0.122387"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:44.095067" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/span[2]'.</msg>
+<arg>${ARROW_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:44.094648" elapsed="0.140046"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SECOND_BANNER}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-05T22:17:44.235145" elapsed="0.037720"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${SECOND_BANNER}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-05T22:17:44.273123" elapsed="0.048155"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:44.321970" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/div/div/div[3]/div/a/img'.</msg>
+<arg>${SECOND_BANNER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:44.321616" elapsed="0.796475"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-01-05T22:17:45.118412" elapsed="0.121483"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:45.240655" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/span[2]'.</msg>
+<arg>${ARROW_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:45.240234" elapsed="0.120936"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${THIRD_BANNER}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-05T22:17:45.361424" elapsed="0.037914"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${THIRD_BANNER}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-05T22:17:45.399587" elapsed="0.046311"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:45.446622" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/div/div/div[4]/div/a/img'.</msg>
+<arg>${THIRD_BANNER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:45.446220" elapsed="0.760779"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-01-05T22:17:46.207260" elapsed="0.111087"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:46.319086" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/span[2]'.</msg>
+<arg>${ARROW_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:46.318677" elapsed="0.130313"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FORTH_BANNER}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-05T22:17:46.449241" elapsed="0.040766"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${FORTH_BANNER}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-05T22:17:46.490289" elapsed="0.051462"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:46.542298" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/div/div/div[5]/div/a/img'.</msg>
+<arg>${FORTH_BANNER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:46.541997" elapsed="0.696681"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-01-05T22:17:47.238933" elapsed="0.118904"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:47.358550" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/span[2]'.</msg>
+<arg>${ARROW_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:47.358167" elapsed="0.135009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIFTH_BANNER}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-05T22:17:47.493424" elapsed="0.039010"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${FIFTH_BANNER}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-05T22:17:47.532985" elapsed="0.041629"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:47.575338" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/div/div/div[6]/div/a/img'.</msg>
+<arg>${FIFTH_BANNER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:47.574966" elapsed="0.817088"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-01-05T22:17:48.392363" elapsed="0.122877"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:48.515924" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/span[2]'.</msg>
+<arg>${ARROW_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:48.515527" elapsed="0.125924"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SIXTH_BANNER}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-05T22:17:48.641992" elapsed="0.038379"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${SIXTH_BANNER}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-01-05T22:17:48.680624" elapsed="0.047815"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:48.728984" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/div/div/div[7]/div/a/img'.</msg>
+<arg>${SIXTH_BANNER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:48.728690" elapsed="0.709973"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-01-05T22:17:49.438962" elapsed="0.119620"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-05T22:17:49.559335" level="INFO">Clicking element 'xpath=//*[@id="app"]/div/div[5]/div/span[2]'.</msg>
+<arg>${ARROW_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-05T22:17:49.558908" elapsed="0.133880"/>
+</kw>
+<status status="PASS" start="2025-01-05T22:17:40.958680" elapsed="8.734290"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-05T22:17:49.693313" elapsed="2.269765"/>
+</kw>
+<doc>This test case should test login functionality on fresh.fri.uniza.sk with valid login data</doc>
+<tag>login</tag>
+<status status="PASS" start="2025-01-05T22:17:37.961968" elapsed="14.001401"/>
+</test>
+<status status="PASS" start="2025-01-05T22:17:37.559531" elapsed="14.404782"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="T 1 Zobrazenie banerov">T 1 Zobrazenie banerov</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
